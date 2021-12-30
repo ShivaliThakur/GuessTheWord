@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+</head>
+
+<body>
+    <h5 id="player1_name"> </h5> <span id="player1_score"> </span>
+    <br>
+    <h5 id="player2_name"> </h5> <span id="player2_score"> </span>
+    <div class="container"> 
+        <center>
+            <h1 style="color: white"> Guess the word </h1>
+            <h2 id="player_question"> Question turn:  </h2>
+            <h2 id="player_answer"> Answer turn:  </h2>
+            <br> <br> <br>
+            <div id="output" style="width:50%">
+
+            </div>
+            <br><br>
+
+            <label> Send Your Word: <b style="color: red"> Try putting a word which has 5 or more alphabets</b></label>
+            <br><br>
+            <input type= "text" id="input_box" placeholder="Word" class="form-control"> 
+            <br> <br>
+            <button id="send_button"style="background-color: green;" style="color: white" onclick="send()" style="width: 30%;"> Send </button>
+        </center>        
+    </div>
+    <script src="gamepage.js"></script>
+    
+</body>
+</html>
